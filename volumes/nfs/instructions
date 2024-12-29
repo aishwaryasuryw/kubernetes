@@ -1,0 +1,15 @@
+Create EFS in AWS and click on attach , copy the NFS client path
+Create a directory:
+mkdir efsdir
+Install nfs-common:
+sudo apt-get install nfs-common
+Paste the copied command ~/efsdir
+Create a directory named test:
+Create yaml file:
+
+To create pod using this file:
+kubectl apply -f nfs.yml
+To view list of pods:
+kubectl get pods
+
+
